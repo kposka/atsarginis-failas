@@ -1,0 +1,40 @@
+.radio{
+  margin-left:60px;
+  height:50px;
+  display:flex;
+  justify-content: space-around;
+   label {
+    padding-right: 15px;
+    line-height: 32px;
+  }
+   .radioinput {
+    position: relative;
+    appearance: none;
+    border-radius: 100px;
+    width: 16px;
+    height: 16px;
+    border: 2px solid $bg-green;
+    transition: 0.2s all linear;
+    margin-right: 5px;
+    position: relative;
+    top: 4px;
+   }
+
+   .radioinput::before{
+     position: absolute;
+     content: "";
+     width:8px;
+     height:8px;
+     border-radius:50%;
+     background:$bg-green;
+     top:1.8px;
+     left:1.8px;
+     transition:0.3s ease;
+     display:none;
+
+   }
+
+   .radioinput:checked::before {
+     display:block;
+   }
+}

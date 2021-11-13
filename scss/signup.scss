@@ -1,0 +1,112 @@
+.signup{
+  display:flex;
+  background:$bg-header;
+  background-size:cover;
+  background-position: center;
+      .signup-overlay{
+        color:White;
+        background:rgba(0, 0, 0, 0.6);
+        display:flex;
+        justify-content: space-around;
+        align-items: center;
+        
+
+          .left-side{
+            display:flex;
+            flex-direction: column;
+            justify-content: space-around;
+            width:40%;
+            margin-left:50px;
+              .bg-logo{
+                background:$logo;
+                background-position: center;
+                background-size:cover;
+                height: 108px;
+                width:247px;
+                margin:25px 0;
+              }
+              h1{
+                font-size: 36px;
+                margin:25px 0;
+              }
+
+              h1::before{
+                content:"";
+                position: absolute;
+                width:50px;
+                height: 3px;
+                background:white;
+                transform: translateY(-25px);
+              }
+
+              p{
+                font-size:16px;
+                margin:25px 0;
+              }
+              button{
+                width:135px;
+                height:42px;
+                text-transform: uppercase;
+                background: rgba(0, 0, 0, 0.1);
+                border:solid white 2px;
+                color:White;
+                margin:25px 0;
+              }
+          }
+        .right-side{
+          width: 360px;
+          background:white;
+          color:black;
+          display:flex;
+          flex-direction:column;
+          border-radius:4px;
+          align-items: flex-start;
+          margin-right:50px;
+
+
+
+           h1{
+             font-size: 20px;
+             text-align: center;
+             background:$bg-grey;
+             line-height: 50px;
+             height:50px;
+             border-top-right-radius: 4px;
+             border-top-left-radius: 4px;
+             width:100%;
+             span{
+               color:$bg-red;
+             }
+           }
+           h3{
+             padding:20px 51px 15px 51px;
+           }
+           .questionaire{
+             width:80%;
+             margin:0 auto;
+             padding-left:20px;
+           input{
+             border:none;
+             border-bottom: 1px solid gray;
+             width:70%;
+             text-align: left;
+             align-self: center;
+             padding-top:20px;
+            }
+           }
+
+
+           #start{
+             width:100%;
+             background: $bg-green;
+             color:white;
+             margin: 0;
+             border-bottom-right-radius: 4px;
+             border-bottom-left-radius: 4px;
+             text-transform: uppercase;
+             font-size:18px;
+             font-weight: 550;
+           }
+        }
+      }
+    }

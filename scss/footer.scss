@@ -1,0 +1,54 @@
+footer{
+  background:$bg-black;
+  display:flex;
+  justify-content: space-around;
+  align-items: center;
+  height:100px;
+  color:grey;
+
+  p:before{
+    content:"©";
+    padding-right:5px;
+    color:grey;
+  }
+  .media-icons{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    width:50%;
+
+    .facebook{
+      background:$facebook;
+      width:30px;
+      height:30px;
+      background-repeat: no-repeat;
+    }
+    .instagram{
+      background:$instagram;
+      width:30px;
+      height:30px;
+      background-repeat: no-repeat;
+    }
+
+    .twitter{
+      background:$twitter;
+      width:37px;
+      height:30px;
+      background-repeat: no-repeat;
+    }
+    .printerest{
+      background:$printerest;
+      width:30px;
+      height:30px;
+      background-repeat: no-repeat;
+    }
+    .logo{
+      background:$connection;
+      width:30px;
+      height:30px;
+      background-repeat: no-repeat;
+      opacity: 0.65;
+      transform: rotateZ(45deg);
+    }
+  }
+}

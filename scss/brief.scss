@@ -1,0 +1,77 @@
+.brief{
+
+
+  display:flex;
+  flex-direction: column;
+
+  padding:50px;
+  .brief-title{
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+
+  h1{
+    font-size:36px;
+    }
+    .line{
+      margin-top:25px;
+      height:2px;
+      width:64px;
+      background:$bg-red;
+
+    }
+    p{
+      color:grey;
+      padding-top:40px;
+      }
+    }
+    .containers-brief{
+      display:flex;
+      justify-content: space-around;
+      padding-top:75px;
+      .container-brief{
+        width:calc(33.3% - 50px);
+        color:black;
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        h3{
+          padding-top:20px;
+        }
+        p{
+          padding-top:20px;
+          text-align:center;
+        }
+        .briefLogo-frame{
+          display:flex;
+          justify-content: center;
+          align-items: center;
+          width:70px;
+          height:70px;
+          border:solid $bg-red 2px;
+          border-radius:100px;
+          .brief-logo-1{
+            background:$medal;
+            width:30px;
+            height:30px;
+            background-repeat: no-repeat;
+            }
+          .brief-logo-3{
+            background:$visa;
+            width:30px;
+            height:30px;
+            background-repeat: no-repeat
+          }
+          .brief-logo-2{
+            background:$gulp;
+            width:30px;
+            height:30px;
+            background-repeat: no-repeat;
+            margin-left:15px;
+          }
+
+        }
+      }
+    }
+
+}

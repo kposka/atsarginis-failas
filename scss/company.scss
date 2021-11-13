@@ -1,0 +1,97 @@
+.company{
+  background:$bg-black;
+  color:white;
+  display:flex;
+  justify-content: space-around;
+  align-items: center;
+  .logo{
+    display:flex;
+    justify-content: flex-end;
+    align-items: center;
+    width:50%;
+    .logoo{
+      background:$logo;
+      width:389px;
+      height:168px;
+      background-repeat:no-repeat;
+    }
+
+  }
+  .company-discretion{
+    margin:80px;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    width:50%;
+    position:relative;
+
+
+    h1{
+      font-size:30px;
+      width:100%;
+      padding:25px;
+    }
+    .line{
+
+      width:200px;
+      height:2px;
+      background:$bg-red;
+      margin-bottom:25px;
+      text-align: left;
+
+    }
+    p{
+      font-size:14px;
+      width:70%;
+      padding-left:20px;
+      padding-bottom:15px;
+      color:rgba(255, 255,255, 0.8);
+    }
+
+    h4{
+      padding-bottom:10px;
+      margin-left:20px;
+      color:rgba(255, 255,255, 0.9)
+    }
+    .viewtext{
+      display:flex;
+      .view{
+        margin-right:15px;
+        background:$bg-red;
+        width:60px;
+        height:60px;
+        background-size:cover;
+        border-radius: 100px;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        .viewOverlay{
+          background:$view;
+          @include companyOverlay;
+        }
+      }
+    }
+    .commenttext{
+      display:flex;
+      .comment{
+        margin-right:15px;
+        background:$bg-red;
+        width:60px;
+        height:60px;
+        background-size:cover;
+        border-radius: 100px;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        .commentOverlay{
+          background:$comment;
+          width:60px;
+          height:50px;
+          background-size:cover;
+          transform: scale(0.5);
+        }
+      }
+    }
+  }
+}
