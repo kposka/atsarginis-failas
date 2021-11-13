@@ -1,0 +1,82 @@
+.navbar{
+  z-index:2;
+  top:0;
+  right:0;
+  left:0;
+  max-width:1400px;
+  position: sticky;
+  margin:0 auto;
+  display:flex;
+  justify-content: space-around;
+  align-items: center;
+  background:$bg-black;
+  padding:15px 0;
+  margin:0px auto;
+
+
+  .logo{
+    background:$logo;
+    background-size: cover;
+    background-position: center;
+    height:52px;
+    width:119px;
+
+  }
+    nav{
+      display:flex;
+        a{
+          font-size:14px;
+          text-decoration: none;
+          margin:0 15px;
+          color:white;
+          opacity:0.67;
+          transition:0.3s ease;
+
+        }
+
+        a:nth-child(2):hover::before{
+          display:block;
+          opacity:1;
+          width:55px;
+        }
+
+        a::before{
+          content: "";
+          position: absolute;
+          width:40px;
+          height:3px;
+          transition: 0.3s ease;
+          background:$bg-black;
+          transform:translateY(41px) translateX(-5px);
+          
+        }
+
+        a:hover:before{
+          display:block;
+          opacity:1;
+          width:75px;
+          background:$bg-red;
+        }
+        a:hover{
+          display:block;
+          opacity:1;
+        }
+      }
+      #mobileNavigationButton{
+        background:$bars;
+        width:25px;
+        height:25px;
+        display:none;
+        transition:0.3s;
+      }
+}
+@media screen and (max-width: 800px) {
+  .navbar {
+    nav{
+      display:none;
+    }
+    #mobileNavigationButton{
+      display:block;
+    }
+  }
+}

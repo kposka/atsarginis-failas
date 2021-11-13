@@ -1,0 +1,19 @@
+@mixin companyOverlay{
+  width:60px;
+  height:50px;
+  background-size:cover;
+  transform: scale(0.5);
+}
+@mixin tabsImagesOverlay{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  font-size:20px;
+  color:white;
+  font-weight: bolder;
+  background:rgba(226, 120, 102, 0.6);
+  background-size:cover;
+  background-position: center;
+  opacity:0;
+  transition:0.3s ease;
+}

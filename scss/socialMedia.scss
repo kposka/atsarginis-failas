@@ -1,0 +1,51 @@
+.socialMedia-container{
+  display:flex;
+  justify-content: space-around;
+
+  .media-text{
+    display:flex;
+    flex-direction: column;
+    width:40%;
+    padding:15px 0;
+  }
+  .media-icons{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    width:50%;
+
+    .facebook{
+      background:$facebook;
+      width:30px;
+      height:30px;
+      background-repeat: no-repeat;
+    }
+    .instagram{
+      background:$instagram;
+      width:30px;
+      height:30px;
+      background-repeat: no-repeat;
+    }
+
+    .twitter{
+      background:$twitter;
+      width:37px;
+      height:30px;
+      background-repeat: no-repeat;
+    }
+    .printerest{
+      background:$printerest;
+      width:30px;
+      height:30px;
+      background-repeat: no-repeat;
+    }
+    .logo{
+      background:$connection;
+      width:30px;
+      height:30px;
+      background-repeat: no-repeat;
+      opacity: 0.65;
+      transform: rotateZ(45deg);
+    }
+  }
+}
